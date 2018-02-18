@@ -1,3 +1,4 @@
+//http://output.jsbin.com/romun
 function curry(fn){
 	return function(){
 		if(fn.length > arguments.length){
