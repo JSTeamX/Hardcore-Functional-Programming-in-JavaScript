@@ -8,9 +8,8 @@ function get(property,object){
 }
 
 //NOT WORK, return 4 elements mapped
-var _names = PEOPLE.map(get('name'));
-
-console.warn(names);
+//var _names = PEOPLE.map(get('name'));
+//console.warn(names);
 /*
 	// IT WORKS
 	function getPersonName(person){
