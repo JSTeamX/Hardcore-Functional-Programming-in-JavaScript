@@ -90,7 +90,7 @@ var fork = _.curry(function(lastly, f, g, x) {
 // compute the average values in a list using
 // only fork, _.divide, _.sum, and _.size.
 
-var avg = _.identity; // change this
+var avg = fork(_.divide,_.sum,_.size); // change this
 assertEqual(3, avg([1,2,3,4,5]));
 
 
