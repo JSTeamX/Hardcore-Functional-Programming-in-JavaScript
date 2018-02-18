@@ -51,8 +51,7 @@ var safeGet = _.curry(function(x,o){ return Maybe(o[x]) })
 var user = {id: 2, name: "Albert"}
 console.log("--------Start exercise 3--------")
 
-var ex3 = undefined;
-
+var ex3 = compose(map(_.head),safeGet('name'));
 
 assertDeepEqual(Maybe('A'), ex3(user))
 console.log("exercise 3...ok!")
