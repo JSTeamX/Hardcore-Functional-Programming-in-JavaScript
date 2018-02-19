@@ -73,21 +73,8 @@ var log=x=>{console.log(x); return x;};
 
 var ex4 = compose(log,map(parseInt),log,Maybe,log);
 
-
 assertDeepEqual(Maybe(4), ex4("4"))
 console.log("exercise 4...ok!")
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // TEST HELPERS
